@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"/>
+ <LinearLayout
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:orientation="vertical"
+     android:layout_marginStart="16sp"
+     android:layout_marginLeft="16sp"
+
+     >
+
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Management"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rachel shalom"
+        android:layout_marginRight="2sp"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/book_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="German"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        />
+    </LinearLayout>
+ </LinearLayout>
+</LinearLayout>
