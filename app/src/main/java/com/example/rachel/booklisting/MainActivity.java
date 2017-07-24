@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bookSearch = (EditText)findViewById(R.id.editText3);
 
-
+    //find
     Button sButton = (Button)findViewById(R.id.button);
     sButton.setOnClickListener(new View.OnClickListener() {
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(MainActivity.this,
                         BooksActivity.class);
                 startActivity(myIntent);
-            }// in case the user did not type anyting 
+            }// in case the user did not type anyting.
             else{
                 Toast.makeText(MainActivity.this,"Please type name of a book or author",Toast.LENGTH_LONG).show();}
         }
