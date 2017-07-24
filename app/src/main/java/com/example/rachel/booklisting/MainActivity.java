@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button sButton = (Button)findViewById(R.id.button);
     sButton.setOnClickListener(new View.OnClickListener() {
+
         @Override
         public void onClick(View v) {
             bookSearch = (EditText)findViewById(R.id.editText3);
@@ -39,12 +40,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(MainActivity.this,
                         BooksActivity.class);
                 startActivity(myIntent);
-            }
+            }// in case the user did not type anyting 
             else{
                 Toast.makeText(MainActivity.this,"Please type name of a book or author",Toast.LENGTH_LONG).show();}
         }
     });
-
-
 }
 }
